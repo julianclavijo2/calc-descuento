@@ -9,7 +9,7 @@
 }
 
 .content {
-  padding: 20px;
+  padding: 50px;
 }
 
 .title {
@@ -20,6 +20,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .title h1 {
@@ -27,6 +34,11 @@
   text-align: center;
   padding: 30px;
   letter-spacing: 5px;
+}
+
+.title img {
+  width: 50px;
+  height: 50px;
 }
 
 .product {
@@ -104,5 +116,82 @@
   transition: all 1s;
   background: black;
   color: white;
+}
+
+.calc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 0px 5px 3px #b3afb3;
+  box-shadow: 0px 0px 5px 3px #b3afb3;
+  padding: 25px;
+}
+
+.calc input {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.calc .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-right: 21px;
+  margin-left: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calc button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  margin-top: 66px;
+  background: #f75036;
+  border-radius: 10px;
+  color: white;
+}
+
+.calc .calc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.calc .form-group {
+  width: 55%;
+}
+
+.calc .result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 /*# sourceMappingURL=index.css.map */

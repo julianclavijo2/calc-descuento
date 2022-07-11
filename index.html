@@ -12,14 +12,49 @@
 <body>
     
     <div class="content ">
-        <div class="row ">
-            <div class="title">
-                <h1>Calculadora <br> de descuentos</h1>
+        <div class="row justify-content-center">
+        
+
+            <div class="calc border">
+                <div class="title">
+                    <img src="./assets/images/calculadora.png" alt="" srcset="">
+                    <h1>Calcula tu producto <br></h1>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Precio producto</label>
+                    <input type="number" class="form-control" id="price" placeholder="Ingrese el valor">
+                  </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Cupones</label>
+                    <select class="form-control" id="cupones">
+                      <option value="null">Selecciona cupon</option>
+                      <option value="10">10%</option>
+                      <option value="15"> 15%</option>
+                      <option value="25">25%</option>
+                      <option value="30">30%</option>
+                      <option value="45">45%</option>
+                    </select>
+                  </div>
+
+                  <div class="result">
+                    <p></p>
+                  </div>
+            
+
+                <button type="button" onclick="calculate()"> calcular </button>
             </div>
 
         </div>
+        <div class="row" style="margin-top:27px">
+            <div class="title">
+                <img src="./assets/images/icon.png" alt="" srcset="">
+                <h1>Mini-Tienda <br></h1>
+            </div>
+
+        </div>
+        
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-3">
                 <div class="product">
                     <div class="head">
                         <label for="price" id="product1">Precio normal : $ 10.000</label>
@@ -32,7 +67,7 @@
 
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-3">
                 <div class="product">
                     <div class="head">
                         <label for="price" id="product2">Precio normal : $ 24.500</label>
@@ -45,7 +80,7 @@
 
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-3">
                 <div class="product">
                     <div class="head">
                         <label for="price" id="product3">Precio normal : $ 30.000</label>
@@ -58,7 +93,7 @@
 
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-3">
                 <div class="product">
                     <div class="head">
                         <label for="price" id="product4">Precio normal : $ 80.000</label>
@@ -72,6 +107,7 @@
                 </div>
             </div>
         </div>
+  
     </div>
 
 <script src="./index.js"></script>
